@@ -1,0 +1,213 @@
+
+/* Estilo general de la pagina */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #080d2b;
+    color: white;
+}
+.mensaje.oculto {
+    display: none;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #65caff;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #cccccc;
+}
+
+/* Puntuacion, vidas y enemigos */
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.informacion div {
+    background-color: #17214d;
+    border: 1px solid #344b91;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+.informacion p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.informacion h2 {
+    margin: 5px;
+    color: #65caff;
+    font-size: 20px;
+}
+
+/* Area del juego */
+main {
+    position: relative;
+    background-color: #050923;
+    border: 2px solid #344b91;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #080d35;
+}
+
+/* Mensaje dentro del juego */
+.mensaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    pointer-events: none;
+}
+
+.mensaje h2 {
+    color: #65caff;
+    font-size: 25px;
+}
+
+.mensaje p {
+    font-size: 15px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1768d1;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3289f5;
+}
+
+/* Instrucciones */
+.instrucciones {
+    padding: 15px;
+    background-color: #17214d;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.instrucciones h3 {
+    color: #65caff;
+    margin-top: 0;
+}
+
+/* Pie de pagina */
+footer {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.controles-moviles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.controles-moviles button {
+    touch-action: none;
+}
+
+@media (min-width: 601px) {
+    .controles-moviles {
+        max-width: 450px;
+        margin: 12px auto;
+    }
+}
+/* Adaptacion para celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .informacion {
+        gap: 5px;
+    }
+
+    .informacion div {
+        padding: 6px 2px;
+    }
+
+    .informacion p {
+        font-size: 11px;
+    }
+
+    .informacion h2 {
+        font-size: 16px;
+    }
+
+    .mensaje h2 {
+        font-size: 18px;
+    }
+
+    .mensaje p {
+        font-size: 12px;
+    }
+
+    .botones {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    button {
+        flex: 1;
+        min-width: 90px;
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+
+    .instrucciones {
+        font-size: 13px;
+    }
+}

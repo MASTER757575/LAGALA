@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAGALA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header>
+            <h1>LAGALA</h1>
+            <p>Defiende la galaxia</p>
+        </header>
+
+        <section class="informacion">
+            <div>
+                <p>Puntuacion</p>
+                <h2 id="puntuacion">0</h2>
+            </div>
+
+            <div>
+                <p>Vidas</p>
+                <h2>♥ ♥ ♥</h2>
+            </div>
+
+            <div>
+                <p>Enemigos</p>
+                <h2 id="enemigos">0 / 10</h2>
+            </div>
+        </section>
+
+        <main>
+            <canvas id="juego" width="800" height="450">
+                Tu navegador no soporta Canvas.
+            </canvas>
+
+            <div class="mensaje">
+                <h2>¡Prepárate para jugar!</h2>
+                <p>Destruye las naves enemigas y consigue puntos.</p>
+            </div>
+        </main>
+
+        <section class="botones">
+            <button type="button" id="iniciar">Iniciar juego</button>
+            <button type="button" id="pausar">Pausar</button>
+            <button type="button" id="reiniciar">Reiniciar</button>
+        </section>
+
+        <section class="instrucciones">
+            <h3>¿Cómo jugar?</h3>
+            <p>Usa las flechas del teclado para mover tu nave.</p>
+            <p>Presiona la barra espaciadora para disparar.</p>
+            <p>En el celular podrás utilizar los controles de pantalla.</p>
+        </section>
+
+        <footer>
+            <p>Proyecto de Diseño y Programación Web I</p>
+        </footer>
+
+    </div>
+<script src="js/codigo.js"></script>
+</body>
+</html>
